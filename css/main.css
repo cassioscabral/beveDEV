@@ -26,3 +26,26 @@ textarea {
 
 fieldset {
   border-color: #cccccc; }
+  fieldset > legend {
+    padding-left: 23px; }
+    fieldset > legend:hover {
+      color: black;
+      cursor: pointer; }
+
+.openable:before {
+  content: "";
+  background: url("../images/arrow.png") no-repeat 0 0;
+  background-size: 20px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 17px; }
+
+.arrow.openable:before {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipV;
+  -ms-filter: "FlipV"; }

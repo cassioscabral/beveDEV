@@ -46,7 +46,7 @@
 
 	<fieldset>
     
-    <legend>Sobre você</legend>
+    <legend class="openable">Sobre você</legend>
 
 		<h1>Email</h1>
 		<input type="text" style="width:700px" value="cassioscabral@gmail.com">
@@ -120,7 +120,7 @@
 
 	<fieldset>
     
-    <legend>Mini-teste de Conhecimentos</legend>
+    <legend class="openable">Mini-teste de Conhecimentos</legend>
 
 		<h1>Ruby <input type="text" style="width:200px" placeholder="Qual o seu conhecimento? de 0 a 10" value="6"></h1>
 		<input type="checkbox" checked><label>Matz</label>
@@ -175,7 +175,7 @@
 	</fieldset>
 
 	<fieldset>
-    <legend>Entrega</legend>
+    <legend class="openable">Entrega</legend>
 
 		<h1>Checklist - Só pra te ajudar :)</h1>
 		<input type="checkbox" checked><label>Fork</label><br>
@@ -190,7 +190,12 @@
 
 	</fieldset>
 
-
-
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	  $("legend").trigger("click");
+	});
+</script>
 </body>
 </html>
