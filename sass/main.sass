@@ -1,0 +1,54 @@
+body
+	font-family: 'Roboto', sans-serif
+	padding: 0
+	margin: 0
+	background-color: #F9F8FC
+h1
+	color: #312E2E
+
+p
+	padding: 0 10px
+
+input[type='text'], textarea
+	$border: 10px
+	$rgba: rgba(80, 78, 112, 0.75)
+	border: none
+	-webkit-border-radius: $border
+	-moz-border-radius: $border
+	border-radius: $border
+	padding: 5px
+	-webkit-box-shadow: 2px 1px 16px $rgba
+	-moz-box-shadow:    2px 1px 16px $rgba
+	box-shadow:         2px 1px 16px $rgba
+	outline: none
+
+textarea
+	padding: 10px
+
+fieldset
+	border-color: #ccc
+	& > legend
+		padding-left: 23px
+		&:hover //efeito ao passar o mouse por cima da legenda
+			color: black
+			cursor: pointer
+
+
+.openable:before
+	content: ""
+	background: url("../images/arrow.png") no-repeat 0 0
+	background-size: 20px
+	display: block
+	width: 20px
+	height: 20px
+	position: absolute
+	left: 17px
+	
+.arrow
+	&.openable:before
+		-moz-transform: scaleY(-1)
+		-o-transform: scaleY(-1)
+		-webkit-transform: scaleY(-1)
+		transform: scaleY(-1)
+		filter: FlipV
+		-ms-filter: "FlipV"

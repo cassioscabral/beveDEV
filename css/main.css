@@ -1,0 +1,51 @@
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f9f8fc; }
+
+h1 {
+  color: #312e2e; }
+
+p {
+  padding: 0 10px; }
+
+input[type='text'], textarea {
+  border: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  -webkit-box-shadow: 2px 1px 16px rgba(80, 78, 112, 0.75);
+  -moz-box-shadow: 2px 1px 16px rgba(80, 78, 112, 0.75);
+  box-shadow: 2px 1px 16px rgba(80, 78, 112, 0.75);
+  outline: none; }
+
+textarea {
+  padding: 10px; }
+
+fieldset {
+  border-color: #cccccc; }
+  fieldset > legend {
+    padding-left: 23px; }
+    fieldset > legend:hover {
+      color: black;
+      cursor: pointer; }
+
+.openable:before {
+  content: "";
+  background: url("../images/arrow.png") no-repeat 0 0;
+  background-size: 20px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 17px; }
+
+.arrow.openable:before {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+  filter: FlipV;
+  -ms-filter: "FlipV"; }
